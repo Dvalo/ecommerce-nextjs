@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Button from "../components/Button";
 
 const StyleGuide: NextPage = () => {
   return (
@@ -41,6 +42,15 @@ const StyleGuide: NextPage = () => {
         <p className="paragraph-4">
           paragraph-4 - The brown fox jumps over the lazy dog
         </p>
+      </div>
+      <div className="p-styleguide__section p-styleguide__buttons">
+        <div className="p-styleguide__title label-1">Primary Buttons</div>
+        <Button type="primary" text="Primary Action Button" />
+        <Button type="primary" text="Primary Link Button" link="/home" />
+
+        <div className="p-styleguide__title label-1">Secondary Buttons</div>
+        <Button type="secondary" text="Secondary Action Button" />
+        <Button type="secondary" text="Secondary Link Button" link="/home" />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ $c-green-300: #a8c2c0;
 $c-green-400: #8baeab;
 $c-green-500: #6e9996;
 $c-green-600: #518581;
+$c-green-700: #3a6663;
 
 // Colors - Orange
 $c-orange-100: #fff0d9;
@@ -31,16 +32,19 @@ $c-gray-500: #bcbbc1;
 $c-gray-600: #afadb5;
 
 // Colors - White
+$c-white: #fff;
 $c-white-100: #fefefe;
 $c-white-200: #fdfdfd;
 $c-white-300: #fcfcfc;
 $c-white-400: #fbfbfb;
 $c-white-500: #fafafa;
 $c-white-600: #f9f9f9;
+$c-white-700: #f3f3f3;
 
 // Colors - Main color mapping
 $c-primary: $c-green-600;
 $c-secondary: $c-orange-600;
+$c-line: $c-white-700;
 
 // Fonts
 $font-eudoxus: eudoxus sans;
