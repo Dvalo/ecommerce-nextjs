@@ -149,6 +149,7 @@ h6.small,
 
 // Paragraphs
 @mixin paragraphs {
+  font-family: $font-eudoxus;
   line-height: 1.8;
   font-weight: 500;
   color: rgba($c-black-600, 0.8);
@@ -158,7 +159,7 @@ h6.small,
 // Paragraph 1
 @mixin paragraph-1 {
   @include paragraphs;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 p.paragraph-1 {
@@ -178,7 +179,7 @@ p.paragraph-2 {
 // Paragraph 3
 @mixin paragraph-3 {
   @include paragraphs;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 p.paragraph-3 {
@@ -188,7 +189,7 @@ p.paragraph-3 {
 // Paragraph 4
 @mixin paragraph-4 {
   @include paragraphs;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 p.paragraph-4 {

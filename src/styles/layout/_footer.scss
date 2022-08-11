@@ -1,0 +1,53 @@
+// Page Footer
+.l-footer {
+  padding: 0 100px;
+}
+
+// Page Footer Inner Wrapper
+.l-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $c-line;
+  padding: 80px 0 90px;
+}
+
+// Page Footer Description
+.l-footer__description > p {
+  @include paragraph-3;
+  margin-top: 36px;
+  max-width: 505px;
+  color: $c-black-600;
+}
+
+// Page Footer Navigation
+.l-footer__nav {
+  display: flex;
+}
+
+.l-footer__nav .l-footer__nav-section {
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+.l-footer__nav .l-footer__nav-title {
+  color: $c-black-600;
+  margin-bottom: 20px;
+}
+
+.l-footer__nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.l-footer__nav ul li {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.l-footer__nav ul li a {
+  @include paragraph-2;
+  color: $c-black-600;
+  text-decoration: none;
+}
