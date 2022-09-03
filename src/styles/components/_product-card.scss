@@ -1,6 +1,14 @@
 .c-product-card__image {
   position: relative;
-  height: 360px;
+  height: 220px;
+
+  @include bp-up(md) {
+    height: 280px;
+  }
+
+  @include bp-up(lg) {
+    height: 360px;
+  }
 }
 
 .c-product-card__content {

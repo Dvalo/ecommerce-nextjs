@@ -31,7 +31,7 @@ const ProductsCarousel = ({ eyebrow, title, description, slides }: IProps) => {
       <div className="b-products-carousel__items">
         <Swiper
           spaceBetween={30}
-          slidesPerView={3.8}
+          slidesPerView="auto"
           loop
           centeredSlides
           grabCursor

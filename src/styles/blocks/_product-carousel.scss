@@ -1,4 +1,9 @@
+.b-products-carousel {
+  @include component-spacing;
+}
+
 .b-products-carousel__content {
+  @include container;
   text-align: center;
 }
 
@@ -17,4 +22,18 @@
 
 .b-products-carousel__items {
   margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.b-products-carousel__item.swiper-slide {
+  width: 80%;
+
+  @include bp-up(md) {
+    width: 60%;
+  }
+
+  @include bp-up(lg) {
+    width: 30%;
+  }
 }

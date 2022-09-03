@@ -9,6 +9,15 @@
   }
 }
 
+// Component spacing
+@mixin component-spacing() {
+  margin: 50px 0;
+
+  @include bp-up(lg) {
+    margin: 160px 0;
+  }
+}
+
 // Container mixin
 @mixin container() {
   padding-right: 24px;

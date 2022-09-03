@@ -1,7 +1,14 @@
 .b-full-width-callout {
   @include container;
+  @include component-spacing;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 180px 0 90px;
+  gap: 16px;
+
+  @include bp-up(lg) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
 }

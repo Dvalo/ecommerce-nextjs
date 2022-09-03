@@ -37,7 +37,7 @@ const TestimonialsCarousel = ({
       <div className="b-testimonials-carousel__items">
         <Swiper
           spaceBetween={50}
-          slidesPerView={2.3}
+          slidesPerView="auto"
           loop
           centeredSlides
           grabCursor
@@ -56,12 +56,7 @@ const TestimonialsCarousel = ({
                 </div>
                 <div className="b-testimonials-carousel__item-footer">
                   <div className="b-testimonials-carousel__item-avatar">
-                    <Image
-                      width={50}
-                      height={50}
-                      alt={slide.name}
-                      src={slide.avatar}
-                    />
+                    <Image layout="fill" alt={slide.name} src={slide.avatar} />
                   </div>
                   <div className="b-testimonials-carousel__item-name">
                     {slide.name}

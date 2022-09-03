@@ -27,6 +27,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+      <button className="l-header__nav-trigger"></button>
     </header>
   );
 };

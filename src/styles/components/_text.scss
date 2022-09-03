@@ -8,19 +8,28 @@
 
 // Title
 .c-title {
+  @include heading-3;
   color: $c-black-600;
   overflow: hidden;
   position: relative;
   transition: transform 0.3s cubic-bezier(0.16, 0.82, 0.42, 1);
+
+  @include bp-up(lg) {
+    @include heading-2;
+  }
 }
 
 // Description
 .c-description {
-  @include paragraph-3;
+  @include paragraph-1;
   color: $c-gray-600;
   overflow: hidden;
   position: relative;
   transition: transform 0.3s cubic-bezier(0.16, 0.82, 0.42, 1);
+
+  @include bp-up(lg) {
+    @include paragraph-3;
+  }
 }
 
 .c-title span,

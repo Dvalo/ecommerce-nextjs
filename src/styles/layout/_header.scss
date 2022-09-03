@@ -1,9 +1,16 @@
 // Page Header
 .l-header {
+  @include container;
   display: flex;
   align-items: center;
-  padding: 40px 100px;
   border-bottom: 2px solid $c-line;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include bp-up(lg) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 // Header Logo
@@ -13,7 +20,12 @@
 
 // Header Nav
 .l-header nav {
+  display: none;
   margin-left: 150px;
+
+  @include bp-up(lg) {
+    display: block;
+  }
 }
 
 .l-header nav ul {
@@ -34,4 +46,9 @@
   @include text-underline;
   color: $c-black-600;
   text-decoration: none;
+}
+
+// Header mobile nav trigger
+.l-header__nav-trigger {
+  display: none;
 }

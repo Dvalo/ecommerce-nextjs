@@ -18,21 +18,41 @@
 
 .b-testimonials-carousel__items {
   margin-top: 50px;
+  position: relative;
+  width: 100%;
 }
 
-.b-testimonials-carousel__item {
-  padding: 32px 28px;
+.b-testimonials-carousel__item.swiper-slide {
+  padding: 18px 16px;
   background: $c-white-600;
   box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  width: 90%;
+
+  @include bp-up(md) {
+    width: 60%;
+  }
+
+  @include bp-up(lg) {
+    width: 50%;
+    padding: 32px 28px;
+  }
 }
 
 .b-testimonials-carousel__item-icon {
-  margin-bottom: 26px;
+  margin-bottom: 18px;
+
+  @include bp-up(lg) {
+    margin-bottom: 26px;
+  }
 }
 
 .b-testimonials-carousel__item-desc {
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   max-width: 80%;
+
+  @include bp-up(lg) {
+    margin-bottom: 26px;
+  }
 }
 
 .b-testimonials-carousel__item-footer {
@@ -42,16 +62,28 @@
 
 .b-testimonials-carousel__item-avatar {
   display: flex;
+  position: relative;
+  width: 28px;
+  height: 28px;
+
+  @include bp-up(md) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .b-testimonials-carousel__item-name {
-  @include heading-4;
+  @include heading-6--small;
   margin-left: 14px;
   color: $c-black-600;
+
+  @include bp-up(lg) {
+    @include heading-4;
+  }
 }
 
 .b-testimonials-carousel__item-rating {
-  @include heading-5;
+  @include heading-6--small;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -59,5 +91,9 @@
 
   svg {
     margin-right: 10px;
+  }
+
+  @include bp-up(lg) {
+    @include heading-5;
   }
 }

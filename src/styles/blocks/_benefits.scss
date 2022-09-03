@@ -1,16 +1,23 @@
 .c-benefits {
   @include container;
-  margin: 180px 0; // temp
+  @include component-spacing;
 }
 
 .c-benefits__header {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: space-between;
+
+  @include bp-up(lg) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
 
 .c-benefits__intro {
-  width: 430px;
+  @include bp-up(lg) {
+    width: 430px;
+  }
 }
 
 .c-benefits__eyebrow {
@@ -18,14 +25,26 @@
 }
 
 .c-benefits__description {
-  width: 505px;
+  margin-top: 16px;
+
+  @include bp-up(lg) {
+    margin-top: 0;
+    width: 505px;
+  }
 }
 
 .c-benefits__items {
   display: flex;
-  margin-top: 80px;
-  gap: 80px;
+  margin-top: 30px;
+  gap: 20px;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include bp-up(lg) {
+    margin-top: 80px;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .c-benefits__items > .c-benefits__item {

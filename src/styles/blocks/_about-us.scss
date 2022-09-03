@@ -1,6 +1,6 @@
 .c-about-us {
   @include container;
-  margin: 180px 0; // temp
+  @include component-spacing;
 }
 
 .c-about-us__info-eyebrow {
@@ -19,7 +19,12 @@
 
 .c-about-us__inner {
   display: flex;
+  flex-direction: column;
   gap: 50px;
+
+  @include bp-up(lg) {
+    flex-direction: row;
+  }
 }
 
 .c-about-us__info,
@@ -43,12 +48,22 @@
 }
 
 .c-about-us__stats-image {
-  height: 100%;
-  margin-top: 60px;
+  height: 260px;
+  margin-top: 30px;
+
+  @include bp-up(lg) {
+    height: 100%;
+    margin-top: 60px;
+  }
 }
 
 .c-about-us__stats-inner {
   display: flex;
-  justify-content: flex-end;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 15px;
+
+  @include bp-up(lg) {
+    justify-content: flex-end;
+    gap: 60px;
+  }
 }

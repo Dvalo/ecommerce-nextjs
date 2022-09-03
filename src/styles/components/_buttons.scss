@@ -7,7 +7,7 @@
 
 .button {
   @include button;
-  @include heading-5;
+  @include heading-6--small;
   color: $c-white;
   transition: background 0.35s ease,
     opacity 0.5s cubic-bezier(0.16, 0.82, 0.42, 1);
@@ -17,6 +17,10 @@
     .button__text {
       transform: translateY(-150%);
     }
+  }
+
+  @include bp-up(lg) {
+    @include heading-5;
   }
 }
 

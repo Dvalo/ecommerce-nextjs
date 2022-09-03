@@ -34,9 +34,9 @@ const Title = ({ title }: IProps) => {
   }, []);
 
   return (
-    <h2 className="c-title" ref={titleRef}>
+    <div className="c-title" ref={titleRef}>
       <span>{title}</span>
-    </h2>
+    </div>
   );
 };
 
