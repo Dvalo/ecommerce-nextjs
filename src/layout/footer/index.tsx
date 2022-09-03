@@ -21,7 +21,7 @@ const Footer = () => {
         <nav className="l-footer__nav">
           {footerItems.map((footerItem) => (
             <div className="l-footer__nav-section" key={footerItem.heading}>
-              <h4 className="l-footer__nav-title">{footerItem.heading}</h4>
+              <div className="l-footer__nav-title">{footerItem.heading}</div>
               <ul>
                 {footerItem.items.map((item) => (
                   <li key={item.title}>
