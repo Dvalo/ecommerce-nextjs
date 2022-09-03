@@ -48,3 +48,10 @@ $c-line: $c-white-700;
 
 // Fonts
 $font-eudoxus: eudoxus sans;
+
+// Breakpoints
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+);

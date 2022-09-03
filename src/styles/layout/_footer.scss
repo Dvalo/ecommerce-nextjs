@@ -48,6 +48,7 @@
 
 .l-footer__nav ul li a {
   @include paragraph-2;
+  @include text-underline;
   color: $c-black-600;
   text-decoration: none;
 }
