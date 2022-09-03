@@ -3,6 +3,7 @@ import About from "../components/About";
 import Benefits from "../components/Benefits/Benefits";
 import FullWidthCallout from "../components/FullWidthCallout";
 import Hero from "../components/Hero";
+import Page from "../components/Page";
 import ProductsCarousel from "../components/Products/ProductsCarousel";
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import { homeHero } from "../mocks/heroMock";
@@ -11,7 +12,7 @@ import { testimonials } from "../mocks/testimonialsMock";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Page title="Lalasia | Furniture Store">
       <Hero
         title={homeHero.title}
         description={homeHero.description}
@@ -37,7 +38,7 @@ const Home: NextPage = () => {
         ctaText="Learn More"
         ctaUrl="/"
       />
-    </div>
+    </Page>
   );
 };
 
