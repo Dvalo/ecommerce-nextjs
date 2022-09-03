@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Benefits from "../components/Benefits/Benefits";
 import Hero from "../components/Hero";
 import { homeHero } from "../mocks/heroMock";
 
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
         image={homeHero.image}
         graphics={homeHero.graphics}
       />
+      <Benefits />
     </div>
   );
 };
