@@ -1,0 +1,30 @@
+// Eyebrow
+.c-eyebrow {
+  color: $c-orange-600;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 0.82, 0.42, 1);
+}
+
+// Title
+.c-title {
+  color: $c-black-600;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 0.82, 0.42, 1);
+}
+
+// Description
+.c-description {
+  @include paragraph-3;
+  color: $c-gray-600;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 0.82, 0.42, 1);
+}
+
+.c-title span,
+.c-description span,
+.c-eyebrow span {
+  display: block;
+}
