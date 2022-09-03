@@ -3,6 +3,7 @@ import Eyebrow from "./Text/Eyebrow";
 import ScrollableImage from "./ScrollableImage";
 import Title from "./Text/Title";
 import Description from "./Text/Description";
+import { prefix } from "../utils/prefix";
 
 const About = () => {
   return (
@@ -26,7 +27,10 @@ const About = () => {
             <Button type="primary" text="Learn More" />
           </div>
           <div className="c-about-us__info-image">
-            <ScrollableImage image="/assets/woodwork.png" alt="Woodwork" />
+            <ScrollableImage
+              image={`${prefix}/assets/woodwork.png`}
+              alt="Woodwork"
+            />
           </div>
         </div>
         <div className="c-about-us__stats">
@@ -45,7 +49,10 @@ const About = () => {
             </div>
           </div>
           <div className="c-about-us__stats-image">
-            <ScrollableImage image="/assets/furniture.png" alt="Furniture" />
+            <ScrollableImage
+              image={`${prefix}/assets/furniture.png`}
+              alt="Furniture"
+            />
           </div>
         </div>
       </div>
