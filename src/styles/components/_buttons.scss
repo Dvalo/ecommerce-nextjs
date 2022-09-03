@@ -9,7 +9,8 @@
   @include button;
   @include heading-5;
   color: $c-white;
-  transition: background 0.35s ease;
+  transition: background 0.35s ease,
+    opacity 0.5s cubic-bezier(0.16, 0.82, 0.42, 1);
 
   &:hover,
   &:focus-visible {
@@ -26,7 +27,7 @@ a.button {
 }
 
 .button__text-wrapper {
-  display: block;
+  display: flex;
   position: relative;
   overflow: hidden;
 }
@@ -41,6 +42,12 @@ a.button {
     top: 150%;
     left: 0;
   }
+}
+
+.button__icon {
+  display: flex;
+  margin-left: 12px;
+  align-items: center;
 }
 
 // Primary button
