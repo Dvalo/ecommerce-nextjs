@@ -1,3 +1,5 @@
+import { prefix } from "../utils/prefix";
+
 interface IProps {
   width: number;
   height: number;
@@ -7,7 +9,7 @@ interface IProps {
 const Icon = ({ width, height, icon }: IProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
-      <use xlinkHref={`/svg/sprite.symbol.svg#${icon}`} />
+      <use xlinkHref={`${prefix}/svg/sprite.symbol.svg#${icon}`} />
     </svg>
   );
 };
