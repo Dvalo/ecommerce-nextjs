@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { prefix } from "../../utils/prefix";
 import menuItems from "./menuItems";
 
 const Header = () => {
@@ -8,7 +9,12 @@ const Header = () => {
       <div className="l-header__logo">
         <Link href="/">
           <a>
-            <Image height={42} width={130} src="/svg/logo.svg" alt="Lalasia" />
+            <Image
+              height={42}
+              width={130}
+              src={`${prefix}svg/logo.svg`}
+              alt="Lalasia"
+            />
           </a>
         </Link>
       </div>

@@ -1,12 +1,18 @@
 import Image from "next/image";
 import footerItems from "./footerItems";
+import { prefix } from "../../utils/prefix";
 
 const Footer = () => {
   return (
     <footer className="l-footer">
       <div className="l-footer__inner">
         <div className="l-footer__description">
-          <Image height={42} width={130} src="/svg/logo.svg" alt="Lalasia" />
+          <Image
+            height={42}
+            width={130}
+            src={`${prefix}svg/logo.svg`}
+            alt="Lalasia"
+          />
           <p className="paragraph-3">
             Lalasia is digital agency that help you make better experience
             iaculis cras in.

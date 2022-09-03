@@ -1,9 +1,18 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import Hero from "../components/Hero";
+import { homeHero } from "../mocks/heroMock";
 
 const Home: NextPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Hero
+        title={homeHero.title}
+        description={homeHero.description}
+        image={homeHero.image}
+        graphics={homeHero.graphics}
+      />
+    </div>
+  );
 };
 
 export default Home;
