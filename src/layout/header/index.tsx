@@ -12,7 +12,7 @@ const Header = () => {
             <Image
               height={42}
               width={130}
-              src={`${prefix}svg/logo.svg`}
+              src={`${prefix}/svg/logo.svg`}
               alt="Lalasia"
             />
           </a>

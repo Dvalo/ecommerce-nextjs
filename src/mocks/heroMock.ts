@@ -5,7 +5,7 @@ const homeHero = {
   description:
     "Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. Purus parturient viverra nunc, tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor.",
   graphics: true,
-  image: `${prefix}assets/hero.png`,
+  image: `${prefix}/assets/hero.png`,
 };
 
 export { homeHero };
