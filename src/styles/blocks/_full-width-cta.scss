@@ -1,0 +1,7 @@
+.b-full-width-callout {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 180px 0 90px;
+}

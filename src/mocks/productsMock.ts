@@ -1,4 +1,5 @@
 import { productCarousel } from "../types/product";
+import { prefix } from "../utils/prefix";
 
 const popularProducts: productCarousel = {
   eyebrow: "Products",
@@ -12,7 +13,7 @@ const popularProducts: productCarousel = {
       snippet: "Combination of wood and wool",
       description: "Combination of wood and wool",
       price: "$62.23",
-      images: [{ url: "/assets/products/p1.png", alt: "Alt" }],
+      images: [{ url: `${prefix}/assets/products/p1.png`, alt: "Alt" }],
     },
     {
       category: "Chair",
@@ -20,7 +21,7 @@ const popularProducts: productCarousel = {
       snippet: "Combination of wood and wool",
       description: "Combination of wood and wool",
       price: "$63.47",
-      images: [{ url: "/assets/products/p2.png", alt: "Alt" }],
+      images: [{ url: `${prefix}/assets/products/p2.png`, alt: "Alt" }],
     },
     {
       category: "Lamp",
@@ -28,7 +29,7 @@ const popularProducts: productCarousel = {
       snippet: "Easy to use with bluetooth connection",
       description: "Easy to use with bluetooth connection",
       price: "$62.23",
-      images: [{ url: "/assets/products/p3.png", alt: "Alt" }],
+      images: [{ url: `${prefix}/assets/products/p3.png`, alt: "Alt" }],
     },
     {
       category: "Sofa",
@@ -36,7 +37,7 @@ const popularProducts: productCarousel = {
       snippet: "Using kapuk randu material",
       description: "Using kapuk randu material",
       price: "$58.39",
-      images: [{ url: "/assets/products/p4.png", alt: "Alt" }],
+      images: [{ url: `${prefix}/assets/products/p4.png`, alt: "Alt" }],
     },
   ],
 };
