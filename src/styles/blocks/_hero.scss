@@ -1,0 +1,38 @@
+.b-hero {
+  @include container;
+  margin-top: 100px;
+  margin-bottom: 180px;
+  text-align: center;
+}
+
+.b-hero__content {
+  position: relative;
+  max-width: 795px;
+  margin: 0 auto;
+}
+
+.b-hero__title {
+  padding: 0 40px;
+}
+
+.b-hero__desc {
+  margin-top: 30px;
+}
+
+.b-hero__arrow {
+  position: absolute;
+  bottom: -50px;
+  left: -250px;
+}
+
+.b-hero__stars {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+}
+
+.b-hero__image {
+  position: relative;
+  height: 480px;
+  margin: 90px 0 0;
+}

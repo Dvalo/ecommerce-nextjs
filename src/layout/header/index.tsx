@@ -1,11 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import menuItems from "./menuItems";
 
 const Header = () => {
   return (
     <header className="l-header">
       <div className="l-header__logo">
-        <Image height={42} width={130} src="/svg/logo.svg" alt="Lalasia" />
+        <Link href="/">
+          <a>
+            <Image height={42} width={130} src="/svg/logo.svg" alt="Lalasia" />
+          </a>
+        </Link>
       </div>
       <nav className="l-header__nav">
         <ul>
